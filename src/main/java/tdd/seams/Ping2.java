@@ -30,6 +30,7 @@ public class Ping2 {
     public static class WebParser {
 
         public String parse(String url) throws IOException, MalformedURLException {
+            
             InputStream response = new URL(url).openStream();
             return IOUtils.toString(response);
         }
